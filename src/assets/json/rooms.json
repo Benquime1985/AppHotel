@@ -1,0 +1,20 @@
+[
+    {
+      "room_numb" : "Room 1",
+      "description" : "Some representative placeholder content for the three columns of text below the carousel. This is the first column.",
+      "price": "$800",
+      "image" : "./assets/img/img_1.jpg"
+    },
+    {
+      "room_numb" : "Room 2",
+      "description" : "Some representative placeholder content for the three columns of text below the carousel. This is the first column.",
+      "price": "$900",
+      "image" : "./assets/img/img_2.jpg"
+    },
+    {
+      "room_numb" : "Room 3",
+      "description" : "Some representative placeholder content for the three columns of text below the carousel. This is the first column.",
+      "price": "$1000",
+      "image" : "./assets/img/Habitacion 3.jpg"
+    }
+]

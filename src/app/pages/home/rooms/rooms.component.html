@@ -1,0 +1,15 @@
+<!--Contenido Habitaciones-->
+<div class="container marketing mt-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Habitaciones</h1>
+      </div>
+      <div class="col-lg-4 mt-3" *ngFor="let room of rooms">
+        <img src="assets/img/rooms/{{ room.image}}" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="{{ room.image}}">
+        <h4 class="card-title">{{ room.title}} <span class="badge text-bg-secondary">No. {{ room.room_numb}} </span></h4>
+        <p> {{ room.description}}</p>
+        <h6>Por Noche <span class="badge text-bg-secondary"> {{ room.price}}</span></h6>
+        <p><a class="btn btn-secondary" href="#">Reservar Ahora! </a></p>
+      </div>
+    </div>
+  </div>
