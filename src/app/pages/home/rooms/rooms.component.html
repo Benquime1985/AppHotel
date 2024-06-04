@@ -5,7 +5,7 @@
         <h1>Habitaciones</h1>
       </div>
       <div class="col-lg-4 mt-3" *ngFor="let room of rooms">
-        <img src="assets/img/rooms/{{ room.image}}" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="{{ room.image}}">
+        <img src="http://localhost:8000/uploads/{{ room.image}}" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="{{ room.image}}">
         <h4 class="card-title">{{ room.title}} <span class="badge text-bg-secondary">No. {{ room.room_numb}} </span></h4>
         <p> {{ room.description}}</p>
         <h6>Por Noche <span class="badge text-bg-secondary"> {{ room.price}}</span></h6>

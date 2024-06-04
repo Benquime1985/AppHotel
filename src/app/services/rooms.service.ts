@@ -7,9 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RoomsService {
-
   constructor(private http: HttpClient) { }
-
   getRooms():Observable<RoomInterface[]>{
     return this.http.get<RoomInterface[]>('http://localhost:8000/api/room');
   }

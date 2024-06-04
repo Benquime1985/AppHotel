@@ -13,6 +13,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { UsersComponent } from './pages/users/users.component';
+import { GestionUserComponent } from './pages/users/gestion-user/gestion-user.component';
+import { HabitacionesComponent } from './pages/habitaciones/habitaciones.component';
+import { GestionHabitacionComponent } from './pages/habitaciones/gestion-habitacion/gestion-habitacion.component';
 
 
 @NgModule({
@@ -26,6 +29,9 @@ import { UsersComponent } from './pages/users/users.component';
     RegisterComponent,
     LoginComponent,
     UsersComponent,
+    GestionUserComponent,
+    HabitacionesComponent,
+    GestionHabitacionComponent,
   ],
   imports: [
     BrowserModule,
