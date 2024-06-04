@@ -1,1 +1,121 @@
-<p>gestion-habitacion works!</p>
+<app-header-adm></app-header-adm>
+<div class="container py-5">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3 *ngIf="!op" class="text-center">Editar Artículo</h3>
+      <h3 *ngIf="op" class="text-center">Agregar Artículo</h3>
+    </div>
+  </div>
+  <div class="row py-4">
+    <div class="col-sm-6 offset-3">
+      <form #f="ngForm" enctype="multipart/form-data">
+        <input type="hidden" name="id" [(ngModel)]="room.id" />
+
+        <div class="mb-3">
+          <label for="titulo" class="form-label">Título:</label>
+          <input
+            [(ngModel)]="room.title"
+            type="text"
+            class="form-control"
+            name="title"
+            id="title"
+            placeholder="Escriba el título del artículo"
+          />
+        </div>
+
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Numero de habitacion:</label>
+            <input
+              [(ngModel)]="room.room_numb"
+              type="text"
+              class="form-control"
+              name="room_numb"
+              id="room_number"
+              placeholder="Escriba el numero de la habitacion"
+            />
+          </div>
+
+        <div *ngIf="!op" class="mb-3">
+          <img
+            class="img-fluid img-thumbnail"
+            src="http://localhost:8000{{ room.image }}"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="imagen" class="form-label">Imagen:</label>
+          <input
+            type="file"
+            class="form-control"
+            name="image"
+            id="image"
+            [(ngModel)]="room.image"
+            (change)="cargarImagen($event)"
+            placeholder="Selecciona una imagen"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="texto">Descripcion</label>
+          <textarea
+            [(ngModel)]="room.description"
+            class="form-control"
+            placeholder="Escriba el texto de su artículo"
+            name="description"
+            style="height: 200px"
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="price" class="form-label">Precio de la habitacion:</label>
+            <input
+              [(ngModel)]="room.price"
+              type="text"
+              class="form-control"
+              name="price"
+              id="price"
+              placeholder="Escriba el precio de la habitacion"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="price" class="form-label">Precio de la habitacion:</label>
+            <input
+              [(ngModel)]="room.reserv_id"
+              type="text"
+              class="form-control"
+              name="reserv_id"
+              id="reserv_id"
+              placeholder="Escriba el id de la reservacion"
+            />
+          </div>
+
+        <br />
+        <button
+          *ngIf="!op"
+          hrf="editar(room.id)"
+          name="editarArticulo"
+          class="btn btn-success float-left"
+        >
+          <i class="bi bi-person-bounding-box"></i> Editar Habitacion
+        </button>
+
+        <button
+          *ngIf="!op"
+          type="submit"
+          name="borrarArticulo"
+          class="btn btn-danger float-right"
+        >
+          <i class="bi bi-person-bounding-box"></i> Borrar Habitacion
+        </button>
+        <button
+          *ngIf="op"
+          (click)="agregar()"
+          name="agregarArticulo"
+          class="btn btn-success float-left"
+        >
+          <i class="bi bi-person-bounding-box"></i> Agregar Habitacion
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

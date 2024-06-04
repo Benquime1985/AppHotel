@@ -16,6 +16,9 @@ import { UsersComponent } from './pages/users/users.component';
 import { GestionUserComponent } from './pages/users/gestion-user/gestion-user.component';
 import { HabitacionesComponent } from './pages/habitaciones/habitaciones.component';
 import { GestionHabitacionComponent } from './pages/habitaciones/gestion-habitacion/gestion-habitacion.component';
+import { ServiciosComponent } from './pages/servicios/servicios.component';
+import { HeaderAdmComponent } from './shared/header-adm/header-adm.component';
+import { GestionServiceComponent } from './pages/servicios/gestion-service/gestion-service.component';
 
 
 @NgModule({
@@ -32,6 +35,10 @@ import { GestionHabitacionComponent } from './pages/habitaciones/gestion-habitac
     GestionUserComponent,
     HabitacionesComponent,
     GestionHabitacionComponent,
+    ServiciosComponent,
+    HeaderAdmComponent,
+    GestionServiceComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -7,9 +7,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RoomsService {
+  url = 'http://localhost:8000/api/room';
   constructor(private http: HttpClient) { }
+
   getRooms():Observable<RoomInterface[]>{
-    return this.http.get<RoomInterface[]>('http://localhost:8000/api/room');
+    return this.http.get<RoomInterface[]>(this.url);
+  }
+
+  postRoom(formData : FormData){ //*Dtos del formulario
+    return this.http.post(this.url, formData);
   }
 
 }

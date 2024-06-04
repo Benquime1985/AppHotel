@@ -1,0 +1,55 @@
+/* Custom Navbar Styles */
+.navbar-custom {
+    background-color: #4B34A2; /* Primary color */
+  }
+  
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
+    color: #FFFFFF; /* White text color */
+  }
+  
+  .navbar-custom .nav-link:hover,
+  .navbar-custom .nav-link:focus {
+    color: #EDD83D; /* Secondary color (hover effect) */
+  }
+  
+  .navbar-custom .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.5); /* Disabled link color */
+  }
+  
+  .navbar-custom .dropdown-menu {
+    background-color: #4B34A2; /* Primary color for dropdown */
+  }
+  
+  .navbar-custom .dropdown-item {
+    color: #FFFFFF; /* White text color for dropdown items */
+  }
+  
+  .navbar-custom .dropdown-item:hover,
+  .navbar-custom .dropdown-item:focus {
+    color: #4B34A2; /* Primary color for text on hover */
+    background-color: #EDD83D; /* Secondary color (hover effect) */
+  }
+  
+  .navbar-custom .btn-primary {
+    background-color: #6AB547; /* Secondary color 2 */
+    border-color: #6AB547; /* Secondary color 2 */
+  }
+  
+  .navbar-custom .btn-primary:hover,
+  .navbar-custom .btn-primary:focus {
+    background-color: #358e0c; /* Darkened primary color */
+    border-color: #358e0c; /* Darkened primary color */
+  }
+  
+  .navbar-custom .btn-primary2 {
+    color: #FFFF;
+    background-color: #e9cf27; /* Secondary color 2 */
+    border-color: #dcf53c; /* Secondary color 2 */
+  }
+  .navbar-custom .btn-primary2:hover,
+  .navbar-custom .btn-primary2:focus {
+    background-color: #e9cf27e4; /* Secondary color 2 */
+    border-color: #dcf53cca; /* Secondary color 2 */
+  }
+  

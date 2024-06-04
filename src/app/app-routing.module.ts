@@ -6,6 +6,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { UsersComponent } from './pages/users/users.component';
 import { GestionUserComponent } from './pages/users/gestion-user/gestion-user.component';
 import { HabitacionesComponent } from './pages/habitaciones/habitaciones.component';
+import { GestionHabitacionComponent } from './pages/habitaciones/gestion-habitacion/gestion-habitacion.component';
+import { ServiciosComponent } from './pages/servicios/servicios.component';
 
 const routes: Routes = [
   {
@@ -31,6 +33,14 @@ const routes: Routes = [
   {
     path: 'habitaciones',
     component: HabitacionesComponent
+  },
+  {
+    path: 'gestionHabitacion/:id',
+    component: GestionHabitacionComponent
+  },
+  {
+    path: 'servicios',
+    component: ServiciosComponent
   },
   {
     path:'',
